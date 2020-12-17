@@ -1,22 +1,16 @@
 import React from 'react';
-import {
-  Text,
-} from 'react-native';
+import Home from './src/pages/Home';
+import { ScrollView, Dimensions } from 'react-native';
 
-// import {
-//   Header,
-//   LearnMoreLinks,
-//   Colors,
-//   DebugInstructions,
-//   ReloadInstructions,
-// } from 'react-native/Libraries/NewAppScreen';
 
 const App = () => {
   return (
-    <>
-      <Text>Test</Text>
-    </>
+    <ScrollView style={{height: Dimensions.get('screen').width}}>
+      <Home />
+    </ScrollView>
   );
 };
+
+
 
 export default App;
