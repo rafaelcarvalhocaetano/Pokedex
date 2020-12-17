@@ -5,7 +5,7 @@ import { ScrollView, Dimensions } from 'react-native';
 
 const App = () => {
   return (
-    <ScrollView style={{height: Dimensions.get('screen').width}}>
+    <ScrollView style={{height: Dimensions.get('screen').height}}>
       <Home />
     </ScrollView>
   );

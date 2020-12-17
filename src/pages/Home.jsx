@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, View, StyleSheet, Dimensions } from 'react-native';
+import { Image, View, StyleSheet, Dimensions, Text, TextInput } from 'react-native';
 
 import Logo from '../assets/icons/pokeboll.png';
 
@@ -12,25 +12,34 @@ const Home = () => {
 				<Image source={Logo} style={styles.img} />
 			</View>
 
+			<View>
+				<Text>What Pokemon are you looking for?</Text>
+			</View>
+
+			<View>
+				<TextInput />
+			</View>
+
 
 		</View>
 	)
 }
 
 const larg = Dimensions.get('screen').width;
+const height = Dimensions.get('screen').height;
 
 const styles = StyleSheet.create({
 	container: {
 		width: larg,
-		height: Dimensions.get('screen').height / 2,
-		backgroundColor: '#CCC'
+		height: height,
+		backgroundColor: '#FFFFFF',
 	},
 	img: {
 		position: 'absolute',
 		width: 200,
 		height: 200,
 		right: 0,
-		top: 50
+		top: 0
 	}
 });
 
