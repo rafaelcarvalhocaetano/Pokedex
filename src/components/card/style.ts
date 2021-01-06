@@ -1,7 +1,6 @@
-import { Dimensions, StyleSheet } from 'react-native';
-import { Colors } from '../../../assets/styles/colors';
+import { StyleSheet } from 'react-native';
 
-// const larg = Dimensions.get('screen').width;
+import { Colors } from '../../../assets/styles/colors';
 
 export const styleCard = StyleSheet.create({
   card: {
@@ -10,11 +9,12 @@ export const styleCard = StyleSheet.create({
     height: 110,
     backgroundColor: Colors.green,
     borderRadius: 10,
+    paddingHorizontal: 16,
+    paddingVertical: 10,
   },
-  title: {
-    fontSize: 14,
-    lineHeight: 14,
-    fontWeight: 'bold',
-    color: '#FFFFFF'
+  description: {
+    flex: 1,
+    marginTop: 8,
+    justifyContent: 'space-around',
   }
 });

@@ -6,7 +6,7 @@ export const tagContainer = StyleSheet.create({
   tag: {
     width: 49,
     height: 16,
-    backgroundColor: '#FFFFFF48',
+    backgroundColor: '#FFFFFF38',
     paddingHorizontal: 8,
     paddingVertical: 6,
     justifyContent: 'center',
